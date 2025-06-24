@@ -1,0 +1,114 @@
+.skills-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.skills-box {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 25px rgba(0, 191, 166, 0.4);
+  max-width: 900px;
+  width: 100%;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #00fcd7;
+    border-bottom: 2px solid #00bfa6;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+
+
+  .skills-category {
+  margin-bottom: 2rem;
+  text-align: left;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #00fcd7;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-left: 4px solid #00bfa6;
+    padding-left: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+} 
+
+  .skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: rgba(0, 191, 166, 0.1);
+    border: 1px solid rgba(0, 191, 166, 0.4);
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+
+    i {
+      font-size: 1rem;
+      color: #00fcd7;
+      transition: color 0.3s ease;
+    }
+
+    &:hover {
+      background: rgba(0, 191, 166, 0.25);
+      border: 1px solid #00fcd7;
+      box-shadow: 0 0 12px #00fcd7, 0 0 6px #00fcd7 inset;
+      color: #ffffff;
+
+      i {
+        color: #ffffff;
+      }
+    }
+
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 15px #00bfa6;
+    }
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .skills-box {
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .skills-category h3 {
+    font-size: 1rem;
+  }
+
+  .skill-tag {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

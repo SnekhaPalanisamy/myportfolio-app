@@ -1,0 +1,117 @@
+.projects-section {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 3rem 1.5rem;
+  color: #e8f9f8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #00fcd7;
+    font-size: 2.4rem;
+    border-bottom: 3px solid #00fcd7;
+    display: inline-block;
+    padding-bottom: 0.4rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.projects-grid {
+  display: grid;
+ // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(0, 191, 166, 0.15);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 191, 166, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &:hover {
+    background: rgba(0, 191, 166, 0.13);
+    border-color: #00fcd7;
+    box-shadow: 0 0 25px #00fcd7;
+  }
+
+  .project-name {
+    font-size: 1.3rem;
+    color: #00fcd7;
+    margin-bottom: 0.7rem;
+    
+      .project-type {
+        display: inline-block;
+        background: rgba(0, 191, 166, 0.15);
+        color: #7cd9d1;
+        font-size: 0.75rem;
+        margin-left: 0.6rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 252, 215, 0.4);
+        vertical-align: middle;
+      }
+  }
+
+  .project-desc,
+  .project-tech {
+    font-size: 0.95rem;
+    color: #d0f4f1;
+    margin-bottom: 0.6rem;
+
+    strong {
+      color: #aaf6ef;
+    }
+  }
+
+  .project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+
+    a {
+      font-size: 1.4rem;
+      color: #00fcd7;
+      transition: 0.3s;
+
+      &:hover {
+        color: #ffffff;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .project-card {
+    padding: 1.2rem;
+  }
+
+  .project-name {
+    font-size: 1.1rem;
+  }
+
+  .project-desc,
+  .project-tech {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; // 👈 1 per row on smaller screens
+  }
+}

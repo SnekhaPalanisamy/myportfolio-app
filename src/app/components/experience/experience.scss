@@ -1,0 +1,139 @@
+.experience-section {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  color: #fff;
+}
+
+.experience-container {
+  max-width: 780px;  /* Smaller container */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 25px rgba(0, 191, 166, 0.25);
+  backdrop-filter: blur(14px);
+  text-align: left;
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #00fcd7;
+  font-size: 2.4rem;
+  border-bottom: 3px solid #00fcd7;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+}
+
+.timeline {
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #00fcd7;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background: #00fcd7;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00fcd7;
+  }
+
+  .timeline-content {
+    background: rgba(0, 191, 166, 0.05);
+    border-radius: 12px;
+    padding: 1.3rem 1.5rem;
+    border: 1px solid rgba(0, 191, 166, 0.25);
+    transition: all 0.3s ease;
+
+    h3 {
+      font-size: 1.3rem;
+      color: #00fcd7;
+      margin-bottom: 0.3rem;
+    }
+
+    .company {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #aaf6ef;
+      margin-bottom: 0.2rem;
+    }
+
+    .duration {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #7cd9d1;
+      margin-bottom: 1rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+      color: #d0f4f1;
+
+      li {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+
+    &:hover {
+      background: rgba(0, 191, 166, 0.12);
+      border-color: #00fcd7;
+      box-shadow: 0 0 12px #00fcd7;
+      transform: translateX(4px);
+    }
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 1.5rem 1.8rem;
+
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .timeline {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+
+    .timeline-item {
+      margin-bottom: 1.8rem;
+
+      &::before {
+        left: -6px;
+        width: 14px;
+        height: 14px;
+      }
+
+      .timeline-content {
+        padding: 1rem 1.2rem;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

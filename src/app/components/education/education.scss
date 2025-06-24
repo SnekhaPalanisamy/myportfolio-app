@@ -1,0 +1,99 @@
+.education-section {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.education-box {
+  max-width: 750px; /* Reduced from 850px */
+  width: 100%;
+  padding: 1.5rem 2rem; /* Slightly reduced padding */
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 191, 166, 0.3);
+  color: #e8f9f8;
+  text-align: center;
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #00fcd7;
+    border-bottom: 2px solid #00fcd7;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+
+  .education-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .edu-entry {
+    background: rgba(0, 191, 166, 0.05);
+    border: 1px solid rgba(0, 191, 166, 0.2);
+    border-radius: 16px;
+    padding: 1.2rem 1.5rem;
+    transition: all 0.3s ease;
+    text-align: left;
+
+    h3 {
+      font-size: 1.4rem;
+      color: #00fcd7;
+      margin-bottom: 0.3rem;
+    }
+
+    .institution {
+      font-size: 1.05rem;
+      color: #ffffffcc;
+    }
+
+    .year {
+      font-size: 0.95rem;
+      color: #aaf6ef;
+      margin: 0.3rem 0;
+    }
+
+    .percentage {
+      font-size: 1.2rem;
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 0.4rem;
+    }
+
+    &:hover {
+      transform: scale(1.015);
+      box-shadow: 0 0 14px #00fcd7;
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .education-box {
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .edu-entry {
+      padding: 1rem;
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .percentage {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
