@@ -1,59 +1,28 @@
-# Portfolio
+# 💼 Personal Portfolio – Snekha Palanisamy
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+This is a personal portfolio web application built using **Angular** and deployed on **Azure App Service**. It showcases my skills, experience, and projects as a Full Stack Developer with expertise in Angular, .NET, and Microsoft Azure.
 
-## Development server
+## 📌 Features
 
-To start a local development server, run:
+- Responsive landing page with a clean, modern UI
+- Sections include: Home, About, Skills, Projects, and Contact
+- Interactive contact form
+- Scroll navigation with smooth transitions
+- Fully deployed using **CI/CD pipeline** via Azure DevOps
+- Hosted on Azure App Service
 
-```bash
-ng serve
-```
+## 🛠️ Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Frontend**: Angular, TypeScript, HTML5, CSS3
+- **Deployment**: Azure Static Web Apps
+- **DevOps**: Azure DevOps (CI/CD Pipelines)
+- **Version Control**: Git, GitHub
 
-## Code scaffolding
+## 🔗 Live Preview
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+🌐 [Visit My Live Portfolio](https://snekhapalanisamy-portfolio-fwhxfbf8gydrdma8.canadacentral-01.azurewebsites.net/)
 
-```bash
-ng generate component component-name
-```
+## 🚀 Deployment Workflow
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+This project uses **Azure DevOps CI/CD** pipeline to automatically build and deploy the Angular application to Azure App Service when a new commit is pushed to the `main` branch.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
